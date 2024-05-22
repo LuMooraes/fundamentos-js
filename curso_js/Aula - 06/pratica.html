@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //como é possivel guardar o valor digitado em um prompt() dentro de uma variavel//
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Seu nome é ${nome}`)
+
+        //como fazer com que um número digitado em um prompt() possa ser usado em cálculos//
+        var n1 = Number(window.prompt('Digite o primeiro número'))
+        var n2 = Number(window.prompt('Digite o segundo numero'))
+        var s = n1+n2
+        window.alert(`A soma de ${n1} e ${n2} é de ${s}`)
+        
+
+        //como transformar um texto todo para letras MAIÚSCULAS
+        var nome = window.prompt('Digite seu nome')
+        window.alert(`Seu nome em maiúsculo é ${nome.toUpperCase()}`)
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}`)
+
+        //escreva o salário em formato br
+        var salario = 1900.51
+        document.write(`Seu salário é de ${salario.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})}`)
+    </script>
+</body>
+</html>
